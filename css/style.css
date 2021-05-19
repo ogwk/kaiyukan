@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+.body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Kaku Gothic ProN', '游ゴシック Medium', meiryo, 'Droid Sans', sans-serif;
+    
+}
+.wrap{
+    overflow: hidden;
+}
+
+header{
+    box-sizing: border-box;
+}
+.header-container-sp{
+    display: none;
+}
+
+
+.header-container-pc{
+    width: 100%;
+    box-sizing: border-box;
+
+    position:fixed;
+    display: flex;
+    justify-content: space-between;
+    padding:15px
+}
+
+.logo-pc img{
+    /* padding:15px; */
+    width: 100px;
+}
+
+.header-navarea{
+    display: flex;
+}
+
+.header-navarea p{
+    font-size: 12px;
+    padding:5px;
+    position:relative;
+	line-height:2em;
+	text-indent:2em;  
+}
+
+.access, .navlist{
+    padding:0 25px;
+}
+
+.access-pc::before, .share-pc::before, .language-pc::before{
+    content: "";
+	position:absolute; 
+	left:0;
+	display:inline-block;
+	width:2em;
+	height:2em;     
+	background-size:contain;    
+}
+
+.access-pc::before{
+    background-image: url(../img/icon_telephone.png);
+}
+
+.share-pc::before{
+    background-image: url(../img/icon-share.png);
+}
+
+.language-pc::before{
+    background-image: url(../img/icon-language.png);
+}
+
+.search{
+    position: relative;
+    width: 20px;
+    padding: 0px 0 0px 10px;
+}
+
+.search:hover{
+    cursor: pointer;
+}
+.search img{
+    width: 60%;
+    /* margin-bottom: -5px; */
+    padding: 5p
+    x 5px 5px 10px;
+    border-left: solid 1px gray;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    /* -webkit- transform: translateY(-50%) translateX(-50%);     */
+}
+
+@media screen and (max-width: 600px) {
+    .header-container-sp{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .logo-sp{
+        width: 40%;
+    }
+
+    .logo-sp img{
+        width: 100%;
+    }
+
+    .linknav{
+        display: flex;
+    }
+    
+    .header-container-pc{
+        display: none;
+    }
+}
