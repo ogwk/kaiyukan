@@ -570,12 +570,13 @@ header {
 .section-title::before {
 	content: "";
 	background-size: contain;
-	width: 2em;
-	height: 2em;
+	width: 1.5em;
+	height: 1.5em;
 	display: inline-block;
 	position: absolute;
-	top: -3em;
-	left: 1em;
+	top: -2em;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .newstitle::before {
 	background-image: url("../img/icon-news.png");
@@ -584,9 +585,10 @@ header {
 .section-title::after {
 	display: inline-block;
 	position: absolute;
-	font-size: 14px;
-	top: 2.5em;
-	left: 2em;
+	font-size: 10px;
+	top: 3em;
+	left: 50%;
+	transform: translateX(-50%);
 	color: #949494;
 }
 .newstitle::after {
@@ -837,10 +839,17 @@ header {
 		display: inline-block;
 	}
 }
-
-.pickup-area {
+.pickup-area-pc,
+.pickup-area-sp {
 	text-align: center;
 	background-color: #e0f0fc;
+}
+
+.pickup-area-pc {
+	padding: 0 50px;
+}
+.pickup-area-sp {
+	display: none;
 }
 
 .pickuptitle::before {
@@ -848,4 +857,85 @@ header {
 }
 .pickuptitle::after {
 	content: "Pick Up";
+}
+
+.boxcontainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 20px auto;
+	padding: 0;
+}
+/* ３つ */
+.info-box {
+	width: 25%;
+	margin: 20px;
+	padding: 3px;
+	position: relative;
+	text-decoration: none;
+}
+.info-box img {
+	width: 100%;
+	border-radius: 10px;
+}
+.info-submsg {
+	padding: 10px 0;
+	color: #5d7dbf;
+	font-weight: bold;
+}
+
+.article {
+	color: #5d7dbf;
+	font-size: 12px;
+	line-height: 1.5;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+	/* サイズが600以下の場合に適応 */
+	.parts {
+		width: 90%;
+	}
+	.boxcontainer {
+		/* width: 90%; */
+		margin: 0 auto;
+		justify-content: center;
+		padding-bottom: 10px;
+	}
+
+	/* ３つ */
+	.info-box {
+		width: 100%;
+		padding: 20px 5px 5px 5px;
+		margin: 20px;
+	}
+	.pickup-area-pc {
+		display: none;
+	}
+	.pickup-area-sp {
+		display: block;
+	}
+	.info-box {
+		width: 43%;
+		margin: 10px;
+		padding: 3px;
+		position: relative;
+		text-decoration: none;
+	}
+
+	.info-box img {
+		border-radius: 10px;
+	}
+
+	.info-submsg {
+		text-align: center;
+		font-size: 13px;
+		padding: 10px 0 0 0;
+	}
+
+	.article {
+		text-align: center;
+		padding: 10px;
+		font-size: 10px;
+	}
 }
