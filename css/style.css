@@ -397,7 +397,8 @@ header {
 	display: inline-block;
 	position: absolute;
 	left: 0;
-	top: 0;
+	top: 50%;
+	transform: translateY(-50%);
 	background-size: contain;
 }
 .timemoney::before {
