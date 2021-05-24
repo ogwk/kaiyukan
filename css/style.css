@@ -864,8 +864,8 @@ header {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	margin: 20px auto;
-	padding: 0;
+	margin: 0px auto;
+	padding: 20px 0;
 }
 /* ３つ */
 .info-box {
@@ -882,7 +882,6 @@ header {
 .info-submsg {
 	padding: 10px 0;
 	color: #5d7dbf;
-	font-weight: bold;
 }
 
 .article {
@@ -932,6 +931,7 @@ header {
 		text-align: center;
 		font-size: 13px;
 		padding: 10px 0 0 0;
+		font-weight: bold;
 	}
 
 	.article {
@@ -939,4 +939,63 @@ header {
 		padding: 10px;
 		font-size: 10px;
 	}
+}
+
+.sns-area {
+	text-align: center;
+	background-image: url("../img/connect-bg.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* background-color: #e0f0fc; */
+}
+.sns-container {
+	display: flex;
+	justify-content: center;
+}
+.sns-main {
+	width: 50%;
+}
+.sns-side {
+	width: 30%;
+}
+
+.blog-area,
+.fb-area,
+.ig-area,
+.tw-area,
+.yt-area {
+	background-color: white;
+	margin: 30px;
+	padding: 20px 50px 20px 30px;
+}
+
+.blog-container,
+.fb-container,
+.ig-container,
+.tw-container,
+.yt-container {
+	overflow-y: scroll;
+	display: flex;
+}
+
+.blog-area img,
+.fb-area img,
+.ig-area img,
+.tw-area img,
+.yt-area img {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.blog-box {
+	display: block;
+	width: 50%;
+	margin: 5px;
+}
+
+.bl-article {
+	font-size: 11px;
+	text-align: start;
+	text-decoration: underline;
+	padding-top: 10px;
 }
