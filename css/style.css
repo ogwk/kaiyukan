@@ -946,6 +946,7 @@ header {
 	background-image: url("../img/connect-bg.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	padding:50px 0;
 	/* background-color: #e0f0fc; */
 }
 .sns-container {
@@ -953,12 +954,67 @@ header {
 	justify-content: center;
 }
 .sns-main {
-	width: 50%;
+	width: 600px;
 }
 .sns-side {
-	width: 30%;
+	width: 400px;
 }
 
+.snstitle{
+	margin:20px 0;
+	display: inline-block;
+	position:relative;
+
+}
+
+.snstitle::before{
+	content: "";
+	display: inline-block;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 3em;
+	height: 1.5em;
+	position: absolute;
+	left:0;
+	top: 50%;
+	transform: translateY(-50%);
+
+}
+.blgtitle{		
+	padding-left: 3.5em;
+}
+.fbtitle{
+	padding-left: 1.5em;	
+}
+.igtitle{
+	padding-left: 2em;		
+}
+.twtitle{
+	padding-left: 2em;		
+}
+.yttitle{
+	padding-left: 2.5em;			
+}
+.blgtitle::before{
+	height: 1.2em;			
+	background-image: url(../img/connect-blog-title.png);
+}
+.fbtitle::before{
+	background-image: url(../img/connect-fb-title.png);
+	
+}
+.igtitle::before{
+	background-image: url(../img/connect-ig-title.png);
+	
+}
+.twtitle::before{
+	background-image: url(../img/connect-tw-title.png);
+	
+}
+.yttitle::before{
+	background-image: url(../img/connect-yt-title.png);
+	
+}
 .blog-area,
 .fb-area,
 .ig-area,
@@ -966,7 +1022,7 @@ header {
 .yt-area {
 	background-color: white;
 	margin: 30px;
-	padding: 20px 50px 20px 30px;
+
 }
 
 .blog-container,
@@ -974,8 +1030,11 @@ header {
 .ig-container,
 .tw-container,
 .yt-container {
-	overflow-y: scroll;
 	display: flex;
+	flex-wrap: wrap;
+	overflow-y: scroll;
+	margin: 0px 30px 20px 30px;
+	height: 200px;	
 }
 
 .blog-area img,
@@ -984,13 +1043,22 @@ header {
 .tw-area img,
 .yt-area img {
 	width: 100%;
-	border-radius: 10px;
+	border-radius: 5px;
+}
+.blog-area,
+.fb-area,
+.ig-area,
+.yt-area{
+	height: 300px;
+}
+.tw-area{
+	height: 630px;
 }
 
 .blog-box {
 	display: block;
-	width: 50%;
-	margin: 5px;
+	width: 200px;
+	margin: 10px;
 }
 
 .bl-article {
@@ -998,4 +1066,6 @@ header {
 	text-align: start;
 	text-decoration: underline;
 	padding-top: 10px;
+	line-height: 1.5;
+
 }
