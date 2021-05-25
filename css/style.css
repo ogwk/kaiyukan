@@ -869,7 +869,7 @@ header {
 }
 /* ３つ */
 .info-box {
-	width: 25%;
+	width: 300px;
 	margin: 20px;
 	padding: 3px;
 	position: relative;
@@ -1034,7 +1034,7 @@ header {
 	flex-wrap: wrap;
 	overflow-y: scroll;
 	margin: 0px 30px 20px 30px;
-	height: 200px;	
+	height: 160px;	
 }
 
 .blog-area img,
@@ -1049,10 +1049,10 @@ header {
 .fb-area,
 .ig-area,
 .yt-area{
-	height: 300px;
+	height: 250px;
 }
 .tw-area{
-	height: 630px;
+	height: 530px;
 }
 
 .blog-box {
@@ -1068,4 +1068,93 @@ header {
 	padding-top: 10px;
 	line-height: 1.5;
 
+}
+
+
+.box-area{
+	padding:50px 10px;
+}
+.square-sp{
+	display: none;
+}
+.square-row{
+	display: flex;
+	justify-content: center;
+}
+.square{
+	text-align: center;
+	padding:20px;
+	margin:20px;
+	width: 200px;
+	height: 180px;
+	border:0.5px solid #5d7dbf;
+	position:relative;
+}
+.square::after{
+	content: "";
+	width: 0.4em;
+	height: 0.4em;
+	position: absolute;
+	bottom: 2px;
+	right:2px;
+	background-image: url("../img/thv-ico-link.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+.square-img img{
+	width: 40px;
+	height: 40px;
+	margin:10px;
+}
+.square-title{
+	color: #5d7dbf;	
+	font-size: 13px;
+	line-height: 1.5;	
+	font-weight: bold;
+}
+.square-msg{
+	color: #5d7dbf;	
+	font-size: 12px;
+	line-height: 1.5;
+}
+@media screen and (max-width: 600px) {
+	/* サイズが600以下の場合に適応 */
+	.square-sp{
+		display: block;
+	}	
+	.square-row{
+		display: none;
+	}
+	.square-img img{
+		width: 30px;
+		height: 30px;
+		margin:0;
+	}	
+	.square-spmsg{
+		margin-left: 10px;
+		font-size: 14px;
+		text-align: left;
+		vertical-align: middle;
+	}
+	br{
+		display: none;
+	}
+	.box-area{
+		background-color: #ECEDED;
+		padding-top: 20px;
+	}
+	.square-row{
+		flex-direction: column;
+	}	
+	.square{
+		width: 300px;
+		padding: 10px;
+		height:auto;
+		margin:10px auto;
+		background-color: white;
+		display: flex;
+	}
+}
+footer{
+	background-color: #5D7DBF;
 }
