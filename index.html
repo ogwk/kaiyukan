@@ -8,6 +8,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <link href="css/reset.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/script.js"></script>
   <title>世界最大級の水族館　海遊館</title>
 </head>
 <body>
@@ -25,13 +27,26 @@
                         <!-- <img src="img/icon_telephone.png" alt="お問い合わせ" title="お問い合わせ"> -->
                         <p class="access-pc">お問い合わせ</p>
                     </div>
-                    <div class="navlist">
+                    <div class="navlist nav-share">
                         <!-- <img src="パス" alt="大体テキスト" title="タイトル"> -->
                         <p class="share-pc">SHARE</p>
+                        <ul class="share-list">
+                            <li><a href="index.html"><img src="img/ico-util-share-fb.png"></a></li>
+                            <li><a href="index.html"><img src="img/ico-util-share-tw.png"></a></li>
+                        </ul>
                     </div>
-                    <div class="navlist">
+                    <div class="navlist nav-language">
                         <!-- <img src="パス" alt="大体テキスト" title="タイトル"> -->
                         <p class="language-pc">Language Change</p>
+                        <ul class="language-list">
+                            <li><a href="index.html">日本語</a></li>
+                            <li><a href="index.html">English</a></li>
+                            <li><a href="index.html">한글</a></li>
+                            <li><a href="index.html">简体中文</a></li>
+                            <li><a href="index.html">繁體中文</a></li>
+                            <li><a href="index.html">ภาษาไทย</a></li>
+                            <li><a href="index.html">Others</a></li>
+                        </ul>                        
                     </div> 
                     <div class="search">
                         <img src="img/icon-search.png" alt="検索" title="検索">
@@ -138,7 +153,7 @@
                             <p>安心安全の取組み</p>
                         </div>
                         <div class="info-down3">
-                            <p class="link-arrow">動画で照会中</p>
+                            <p class="link-arrow">動画で紹介中</p>
                         </div>
                     </a>                                            
                 </div>
@@ -163,16 +178,15 @@
                         <li><a href="index.html"><img src="img/mv-sns-ig.png"></a></li>
                     </ul>
                 </div>
-                <div class="pick-up"><img src="img/mv-topics.gif"></div>
+                <a class="pick-up"><img src="img/mv-topics.gif"></a>
             </aside>
         </div>
 
         <div class="news-area">
             <h2 class="section-title newstitle">ニュース</h2>
+            <a class="news-btn-area pc-btn"><p class="news-btn link-arrow">一覧</p></a>
             <div class="news-content">
-                <div class="news-btn-area">
-                    <a class=""><p class="news-btn link-arrow">一覧</p></a>
-                </div>
+                <a class="news-btn-area sp-btn"><p class="news-btn link-arrow">一覧</p></a>
                 <div class="news-list">
                     <ul>
                         <li><a href="index.html">2021.04.24 臨時休館のお知らせ</a></li>
@@ -211,14 +225,14 @@
                     <img class="mainimg" src="img/menu-feel.jpg" alt="feel">
                     <img  class="img-catch2"src="img/menu-feel-catch.png" alt="feel">
                     <div class="color-box2 cl-pink">
-                        <p>新体感エリア</p>
+                        <p class="allow-top">新体感エリア</p>
                     </div>                    
                 </div>
                 <div class="show-box1">
                     <img class="mainimg" src="img/menu-life.jpg" alt="life">
                     <img  class="img-catch1"src="img/menu-life-catch.png" alt="life">
                     <div class="color-box1 cl-blue">
-                        <p>常設展示</p>
+                        <p class="allow-top">常設展示</p>
                     </div>                    
                 </div>
             </div>
@@ -227,7 +241,7 @@
                     <img class="mainimg" src="img/menu-eat.jpg" alt="eat">
                     <img  class="img-catch2" src="img/menu-eat-catch.png" alt="eat">
                     <div class="color-box2 cl-blue">
-                        <p>生きものたちの<br>お食事タイム</p>
+                        <p class="allow-top">生きものたちの<br>お食事タイム</p>
                     </div>                    
                 </div>
                 <div class="show-box1">
@@ -246,21 +260,21 @@
                 <img class="mainimg-s" src="img/menu-float-s.jpg" alt="float">
                 <img class="img-catch1-s" src="img/menu-float-catch.png" alt="float">
                 <div class="color-box1-s cl-kon">
-                    <p class="allow-top-s">海月銀河</p>
+                    <p class="allow-top">海月銀河</p>
                 </div>
             </div>
             <div class="show-box2-s">
                 <img class="mainimg-s" src="img/menu-feel-s.jpg" alt="feel">
                 <img  class="img-catch2-s" src="img/menu-feel-catch.png" alt="feel">
                 <div class="color-box2-s cl-pink">
-                    <p>新体感エリア</p>
+                    <p class="allow-top">新体感エリア</p>
                 </div>                    
             </div>
             <div class="show-box1-s">
                 <img class="mainimg-s" src="img/menu-life.jpg" alt="life">
                 <img  class="img-catch1-s" src="img/menu-life-catch.png" alt="life">
                 <div class="color-box1-s cl-blue">
-                    <p>常設展示</p>
+                    <p class="allow-top">常設展示</p>
                 </div>                    
             </div>
 
@@ -268,14 +282,14 @@
                 <img class="mainimg-s" src="img/menu-eat-s.jpg" alt="eat">
                 <img  class="img-catch2-s" src="img/menu-eat-catch.png" alt="eat">
                 <div class="color-box2-s cl-blue">
-                    <p>生きものたちの<br>お食事タイム</p>
+                    <p class="allow-top">生きものたちの<br>お食事タイム</p>
                 </div>                    
             </div>
             <div class="show-box1-s">
                 <img class="mainimg-s" src="img/menu-night-s.jpg" alt="night">
                 <img class="img-catch1-s" src="img/menu-night-catch.png" alt="night">
                 <div class="color-box1-s cl-pink">
-                    <p class="allow-top-s">夜の海遊館</p>
+                    <p class="allow-top">夜の海遊館</p>
                 </div>
             </div>                            
         </div>
@@ -356,175 +370,325 @@
                                 海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
                             </a>
                             <a class="blog-box">
-                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
-                                <p class="bl-article">2021/05/17<br>
-                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
+                                <img src="img/s2105_nihonmori_06.jpg" alt="日本の森">
+                                <p class="bl-article">2021/05/16<br>
+                                初夏を迎えようとする「日本の森」。色々な花が咲き始めました。ヤマアジサイも…</p>
                             </a>          
                             <a class="blog-box">
-                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
-                                <p class="bl-article">2021/05/17<br>
-                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
+                                <img src="img/s2105_iburi40_04.jpg" alt="イブリ">
+                                <p class="bl-article">2021/05/15<br>
+                                以布利センター周辺の海では春から初夏にかけて成長する海藻（ホンダワラの仲間）がた…</p>
                             </a>   
                             <a class="blog-box">
-                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
-                                <p class="bl-article">2021/05/17<br>
-                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
-                            </a>   
-                            <a class="blog-box">
-                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
-                                <p class="bl-article">2021/05/17<br>
-                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
-                            </a>   
-                            <a class="blog-box">
-                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
-                                <p class="bl-article">2021/05/17<br>
-                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
-                            </a>   
-                            <a class="blog-box">
-                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
-                                <p class="bl-article">2021/05/17<br>
-                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
-                            </a>   
-                            <a class="blog-box">
-                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
-                                <p class="bl-article">2021/05/17<br>
-                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
-                            </a>   
-                            <a class="blog-box">
-                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
-                                <p class="bl-article">2021/05/17<br>
-                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
-                            </a>   
-                            <a class="blog-box">
-                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
-                                <p class="bl-article">2021/05/17<br>
-                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
+                                <img src="img/s2105_sumitsukiishigakihugu_02.jpg" alt="スミツキイシガキフグ">
+                                <p class="bl-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
                             </a>                                                                                                                                                                                                                                                     
                         </div>
                     </div>
                     <div class="fb-area">
                         <h2 class="snstitle fbtitle">海遊館Facebook</h2>
+                        <div class="fb-container">
+                            <a class="fb-box">
+                                <img src="img/180005035_4051582391551791_3024911053936976507_n.jpg" alt="アザラシ">
+                                <p class="fb-article">2021/05/3<br>
+                                    【ワモンアザラシのアラレ仔成長中！！】先日、4/1に誕生したワモンアザラシのアラレの赤ちゃんを飼育員…</p>
+                            </a>
+                            <a class="fb-box">
+                                <img src="img/167371795_331524435237730_7004065331317169101_n.jpg" alt="日本の森">
+                                <p class="fb-article">2021/05/2<br>
+                                    今日は朝は気持ちよく晴れていたかと思ったらいきなりの雨。春らしい気まぐれな天気でした。館内はというと…</p>
+                            </a>          
+                            <a class="fb-box">
+                                <img src="img/s2105_iburi40_04.jpg" alt="イブリ">
+                                <p class="fb-article">2021/05/15<br>
+                                以布利センター周辺の海では春から初夏にかけて成長する海藻（ホンダワラの仲間）がた…</p>
+                            </a>   
+                            <a class="fb-box">
+                                <img src="img/s2105_sumitsukiishigakihugu_02.jpg" alt="スミツキイシガキフグ">
+                                <p class="fb-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
+                            </a>                                                                                                                                                                                                                                                     
+                        </div>                        
                     </div>    
                     <div class="ig-area">
                         <h2 class="snstitle igtitle">海遊館Instagram</h2>
+                        <div class="ig-container">
+                            <a class="ig-box">
+                                <img src="img/186334609_118197247079655_5763675107185362399_n.jpg" alt="血液検査">
+                            </a>
+                            <a class="blog-box">
+                                <img src="img/184041276_788910688432396_4808188437978480414_n.jpg" alt="日本の森">
+                            </a>          
+                            <a class="blog-box">
+                                <img src="img/s2105_iburi40_04.jpg" alt="イブリ">
+                            </a>   
+                            <a class="blog-box">
+                                <img src="img/s2105_sumitsukiishigakihugu_02.jpg" alt="スミツキイシガキフグ">
+                            </a>                                                                                                                                                                                                                                                     
+                        </div>                        
                     </div>                                      
                 </div>
                 <div class="sns-side">
                     <div class="tw-area">
                         <h2 class="snstitle twtitle">海遊館Twitter</h2>
+                        <div class="tw-container">
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/19<br>
+                                    質問募集はYouTubeのコミュニティで行っていますスマホでご覧いただく場合、ブラウザで開くとコミュ…</p>
+                            </a>
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/19<br>
+                                ＼海遊館初！YouTubeLIVEを行います／5月22日（土）15:00～（約15分間予定）ワモンア…</p>
+                            </a>          
+                            <a class="tw-box">
+                                <img src="img/eDqmEmWzgjnwGj4-.jpg" alt="スミツキイシガキフグ">
+                                <p class="tw-article">2021/05/18<br>
+                                    ワモンアザラシの赤ちゃん、プール付きのお部屋へ引越し編をYouTubeで公開しました(´ω`っ)3▶…</p>
+                            </a>   
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
+                            </a>
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
+                            </a>   
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
+                            </a>                                                        
+                        </div>                                               
                     </div>  
                     <div class="yt-area">
                         <h2 class="snstitle yttitle">海遊館Youtube</h2>
+                        <div class="yt-container">
+                            <img src="img/hqdefault.jpg" alt="スミツキイシガキフグ">
+                        </div>
                     </div>                      
                 </div>
             </div>
+            <div class="sns-container-sp">
+                <div class="blog-area-sp">
+                    <h2 class="snstitle blgtitle">海遊館日記</h2>
+                    <div class="outline-container outc-blog">
+                        <div class="blog-container-sp">
+                            <a class="blog-box">
+                                <img src="img/s2105_sameei_05.jpg" alt="血液検査">
+                                <p class="bl-article">2021/05/17<br>
+                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
+                            </a>
+                            <a class="blog-box">
+                                <img src="img/s2105_nihonmori_06.jpg" alt="日本の森">
+                                <p class="bl-article">2021/05/16<br>
+                                初夏を迎えようとする「日本の森」。色々な花が咲き始めました。ヤマアジサイも…</p>
+                            </a>          
+                            <a class="blog-box">
+                                <img src="img/s2105_iburi40_04.jpg" alt="イブリ">
+                                <p class="bl-article">2021/05/15<br>
+                                以布利センター周辺の海では春から初夏にかけて成長する海藻（ホンダワラの仲間）がた…</p>
+                            </a>   
+                            <a class="blog-box">
+                                <img src="img/s2105_sumitsukiishigakihugu_02.jpg" alt="スミツキイシガキフグ">
+                                <p class="bl-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
+                            </a>                                                                                                                                                                                                                                                 
+                        </div>
+                    </div>
+                </div>
+                <div class="fb-area-sp">
+                    <h2 class="snstitle fbtitle">海遊館Facebook</h2>
+                    <div class="outline-container outc-fb">
+                        <div class="fb-container-sp">
+                            <a class="fb-box">
+                                <img src="img/180005035_4051582391551791_3024911053936976507_n.jpg" alt="アザラシ">
+                                <p class="fb-article">2021/05/3<br>
+                                    【ワモンアザラシのアラレ仔成長中！！】先日、4/1に誕生したワモンアザラシのアラレの赤ちゃんを飼育員…</p>
+                            </a>
+                            <a class="fb-box">
+                                <img src="img/167371795_331524435237730_7004065331317169101_n.jpg" alt="日本の森">
+                                <p class="fb-article">2021/05/2<br>
+                                    今日は朝は気持ちよく晴れていたかと思ったらいきなりの雨。春らしい気まぐれな天気でした。館内はというと…</p>
+                            </a>          
+                            <a class="fb-box">
+                                <img src="img/s2105_iburi40_04.jpg" alt="イブリ">
+                                <p class="fb-article">2021/05/15<br>
+                                以布利センター周辺の海では春から初夏にかけて成長する海藻（ホンダワラの仲間）がた…</p>
+                            </a>   
+                            <a class="fb-box">
+                                <img src="img/s2105_sumitsukiishigakihugu_02.jpg" alt="スミツキイシガキフグ">
+                                <p class="fb-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
+                            </a>                                                                                                                                                                                                                                                  
+                        </div>     
+                    </div>     
+                </div>   
+                <div class="tw-area-sp">
+                    <h2 class="snstitle twtitle">海遊館Twitter</h2>
+                    <div class="outline-container outc-tw">
+                        <div class="tw-container-sp">
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/13<br>
+                                海遊館で暮らしているサメやエイたち、実は定期的に血液検査をしています。「太平洋」…</p>
+                            </a>
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/16<br>
+                                初夏を迎えようとする「日本の森」。色々な花が咲き始めました。ヤマアジサイも…</p>
+                            </a>          
+                            <a class="tw-box">
+                                <img src="img/s2105_sumitsukiishigakihugu_02.jpg" alt="スミツキイシガキフグ">
+                                <p class="tw-article">2021/05/15<br>
+                                以布利センター周辺の海では春から初夏にかけて成長する海藻（ホンダワラの仲間）がた…</p>
+                            </a>   
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
+                            </a>
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
+                            </a>   
+                            <a class="tw-box">
+                                <p class="tw-article">2021/05/13<br>
+                                先月、スミツキイシガキフグの繁殖に成功したことをお知らせしました。（過去ブログ→…</p>
+                            </a>    
+                        </div>                                                            
+                    </div>                                               
+                </div>                                                       
+                <div class="ig-area-sp">
+                    <h2 class="snstitle igtitle">海遊館Instagram</h2>
+                    <div class="outline-container outc-ig">
+
+                        <div class="ig-container-sp">
+                            <a class="ig-box">
+                                <img src="img/186334609_118197247079655_5763675107185362399_n.jpg" alt="血液検査">
+                            </a>
+                            <a class="blog-box">
+                                <img src="img/184041276_788910688432396_4808188437978480414_n.jpg" alt="日本の森">
+                            </a>          
+                            <a class="blog-box">
+                                <img src="img/s2105_iburi40_04.jpg" alt="イブリ">
+                            </a>   
+                            <a class="blog-box">
+                                <img src="img/s2105_sumitsukiishigakihugu_02.jpg" alt="スミツキイシガキフグ">
+                            </a>       
+                        </div>                                                                                                                                                                                                                                                                           
+                    </div>                        
+                </div>                                      
+                <div class="yt-area-sp">
+                    <h2 class="snstitle yttitle">海遊館Youtube</h2>
+                    <div class="yt-container">
+                        <img src="img/hqdefault.jpg" alt="スミツキイシガキフグ">
+                    </div>
+                </div>                      
+            </div>            
         </div>
         <div class="box-area">
             <div class="square-row">
-                <div class="square">
-                    <p class="square-title">海遊館の周辺<br>総合レジャースポット</p>
+                <a class="square">
+                    <p class="square-title">海遊館の周辺<br class="sp-none">総合レジャースポット</p>
                     <div class="square-img"><img src="img/thv-top.png"></div>
-                    <p class="square-msg">天保山<br>ハーバービレッジ<br>総合案内</p>
-                </div>
-                <div class="square">
-                    <p class="square-title">海に面した<br>複合ショッピングモール</p>
+                    <p class="square-msg">天保山<br class="sp-none">ハーバービレッジ<br class="sp-none">総合案内</p>
+                </a>
+                <a class="square">
+                    <p class="square-title">海に面した<br class="sp-none">複合ショッピングモール</p>
                     <div class="square-img"><img src="img/thv-marketplace.png"></div>
-                    <p class="square-msg">天保山<br>マーケットプレース</p>
-                </div>
-                <div class="square">
-                    <p class="square-title">世界最大級の大観覧車<br>　</p>
+                    <p class="square-msg">天保山<br class="sp-none">マーケットプレース</p>
+                </a>
+                <a class="square">
+                    <p class="square-title">世界最大級の大観覧車<br class="sp-none">　</p>
                     <div class="square-img"><img src="img/thv-ferriswheel.png"></div>
                     <p class="square-msg">天保山大観覧車</p>
-                </div>
-                <div class="square">
-                    <p class="square-title">レゴ®の世界を体験<br>　</p>
+                </a>
+                <a class="square">
+                    <p class="square-title">レゴ®の世界を体験<br class="sp-none">　</p>
                     <div class="square-img"><img src="img/thv-lego.png"></div>
-                    <p class="square-msg">レゴランド®<br>ディスカバリー・<br>センター大阪</p>
-                </div>
+                    <p class="square-msg">レゴランド®<br class="sp-none">ディスカバリー・<br class="sp-none">センター大阪</p>
+                </a>
             </div>
             <div class="square-row">           
-                <div class="square">
-                    <p class="square-title">大阪湾クルーズ<br>　</p>
+                <a class="square">
+                    <p class="square-title">大阪湾クルーズ<br class="sp-none">　</p>
                     <div class="square-img"><img src="img/thv-kuishinbo.png"></div>
-                    <p class="square-msg">帆船型観光船<br>サンタマリア</p>
-                </div>
-                <div class="square">
-                    <p class="square-title">全室オーシャンビューの<br>リゾートホテル</p>
+                    <p class="square-msg">帆船型観光船<br class="sp-none">サンタマリア</p>
+                </a>
+                <a class="square">
+                    <p class="square-title">全室オーシャンビューの<br class="sp-none">リゾートホテル</p>
                     <div class="square-img"><img src="img/thv-cruise.png"></div>
-                    <p class="square-msg">ホテルシーガル<br>てんぽーざん大阪</p>
-                </div>
-                <div class="square">
-                    <p class="square-title">海遊館の周辺<br>総合レジャースポット</p>
+                    <p class="square-msg">ホテルシーガル<br class="sp-none">てんぽーざん大阪</p>
+                </a>
+                <a class="square">
+                    <p class="square-title">海遊館の周辺<br class="sp-none">総合レジャースポット</p>
                     <div class="square-img"><img src="img/thv-hotel.png"></div>
-                    <p class="square-msg">天保山<br>ハーバービレッジ<br>総合案内</p>
-                </div>
-                <div class="square">
-                    <p class="square-title">海遊館⇔USJシャトル船<br>　</p>
+                    <p class="square-msg">天保山<br class="sp-none">ハーバービレッジ<br class="sp-none">総合案内</p>
+                </a>
+                <a class="square">
+                    <p class="square-title">海遊館⇔USJシャトル船<br class="sp-none">　</p>
                     <div class="square-img"><img src="img/thv-captline.png"></div>
                     <p class="square-msg">キャプテンライン</p>
-                </div> 
+                </a> 
             </div>  
 
             <div class="square-sp">
-                <div class="square">
+                <a class="square">
                     <div class="square-img"><img src="img/thv-top.png"></div>
                     <div class="square-spmsg">
-                        <p class="square-title">海遊館の周辺<br>総合レジャースポット</p>
-                        <p class="square-msg">天保山<br>ハーバービレッジ<br>総合案内</p>
+                        <p class="square-title">海遊館の周辺<br class="sp-none">総合レジャースポット</p>
+                        <p class="square-msg">天保山<br class="sp-none">ハーバービレッジ<br class="sp-none">総合案内</p>
                     </div>
-                </div>
-                <div class="square">
+                </a>
+                <a class="square">
                     <div class="square-img"><img src="img/thv-marketplace.png"></div>     
                     <div class="square-spmsg">
-                        <p class="square-title">海に面した<br>複合ショッピングモール</p>
-                        <p class="square-msg">天保山<br>マーケットプレース</p>
+                        <p class="square-title">海に面した<br class="sp-none">複合ショッピングモール</p>
+                        <p class="square-msg">天保山<br class="sp-none">マーケットプレース</p>
                     </div>
-                </div>
-                <div class="square">
+                </a>
+                <a class="square">
                     <div class="square-img"><img src="img/thv-ferriswheel.png"></div>
                     <div class="square-spmsg">
-                        <p class="square-title">世界最大級の大観覧車<br>　</p>
+                        <p class="square-title">世界最大級の大観覧車<br class="sp-none">　</p>
                         <p class="square-msg">天保山大観覧車</p>
                     </div>
-                </div>
-                <div class="square">
+                </a>
+                <a class="square">
                     <div class="square-img"><img src="img/thv-lego.png"></div>
                     <div class="square-spmsg">
-                        <p class="square-title">レゴ®の世界を体験<br>　</p>
-                        <p class="square-msg">レゴランド®<br>ディスカバリー・<br>センター大阪</p>
+                        <p class="square-title">レゴ®の世界を体験<br class="sp-none">　</p>
+                        <p class="square-msg">レゴランド®<br class="sp-none">ディスカバリー・<br class="sp-none">センター大阪</p>
                     </div>
-                </div>
-                <div class="square">
+                </a>
+                <a class="square">
                     <div class="square-img"><img src="img/thv-kuishinbo.png"></div>
                     <div class="square-spmsg">
-                        <p class="square-title">大阪湾クルーズ<br>　</p>
-                        <p class="square-msg">帆船型観光船<br>サンタマリア</p>
+                        <p class="square-title">大阪湾クルーズ<br class="sp-none">　</p>
+                        <p class="square-msg">帆船型観光船<br class="sp-none">サンタマリア</p>
                     </div>
-                </div>
-                <div class="square">
+                </a>
+                <a class="square">
                     <div class="square-img"><img src="img/thv-cruise.png"></div>
                     <div class="square-spmsg">
-                        <p class="square-title">全室オーシャンビューの<br>リゾートホテル</p>
-                        <p class="square-msg">ホテルシーガル<br>てんぽーざん大阪</p>
+                        <p class="square-title">全室オーシャンビューの<br class="sp-none">リゾートホテル</p>
+                        <p class="square-msg">ホテルシーガル<br class="sp-none">てんぽーざん大阪</p>
                     </div>
-                </div>
-                <div class="square">
+                </a>
+                <a class="square">
                     <div class="square-img"><img src="img/thv-hotel.png"></div>
                     <div class="square-spmsg">
-                        <p class="square-title">海遊館の周辺<br>総合レジャースポット</p>
-                        <p class="square-msg">天保山<br>ハーバービレッジ<br>総合案内</p>
+                        <p class="square-title">海遊館の周辺<br class="sp-none">総合レジャースポット</p>
+                        <p class="square-msg">天保山<br class="sp-none">ハーバービレッジ<br class="sp-none">総合案内</p>
                     </div>
-                </div>
-                <div class="square">
+                </a>
+                <a class="square">
                     <div class="square-img"><img src="img/thv-captline.png"></div>
                     <div class="square-spmsg">
-                        <p class="square-title">海遊館⇔USJシャトル船<br>　</p>
+                        <p class="square-title">海遊館⇔USJシャトル船<br class="sp-none">　</p>
                         <p class="square-msg">キャプテンライン</p>
                     </div>                   
-                </div>                 
+                </a>                 
             </div>
         </div>
-        <div class="pagetop"><img src="img/pagetop.png" alt="pagetop"></div>
+        <div class="pagetop"><a href="index.html"><img src="img/pagetop.png" alt="pagetop"></a></div>
         <div class="sitemap-area sitemap-pc"><div class="sitemap"><p>サイトマップ</p></div></div>
         <!-- footer Start -->
         <footer>
